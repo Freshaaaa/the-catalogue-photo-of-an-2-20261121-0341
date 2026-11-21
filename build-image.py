@@ -11,16 +11,18 @@ import os
 
 from PIL import Image, ImageDraw, ImageFont
 
-BASE = "media-generation-spoon-bender-base-v2-0-019e742d-6169-4d14-87b2-b46abbd8c968.png"
+BASE = "media-generation-spoon-bender-base-v3-0-50c6b791-a6c9-4714-a8dd-0143eb2db927.png"
 OUT = "entry.png"
 SIZE = 1024
 BRAND = "SPOONBENDER"
 FONT_PATH = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
 # Front panel of the machine, as fractions of the 1024x1024 canvas.
+# v3 has a glass gear window in the UPPER half of the panel, so the brand
+# goes on the LOWER blank half of the panel, centred there.
 PANEL_LEFT = 0.339
 PANEL_RIGHT = 0.684
-PANEL_TOP = 0.404
-PANEL_BOTTOM = 0.814
+PANEL_TOP = 0.600
+PANEL_BOTTOM = 0.769
 INK = (38, 56, 76)  # dark slate navy
 
 
