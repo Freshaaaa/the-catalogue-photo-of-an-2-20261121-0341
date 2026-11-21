@@ -11,7 +11,7 @@ import os
 
 from PIL import Image, ImageDraw, ImageFont
 
-BASE = "media-generation-spoon-bender-base-0-c4c21d7b-4415-472a-9884-e0e80a18ba3b.png"
+BASE = "media-generation-spoon-bender-base-v2-0-019e742d-6169-4d14-87b2-b46abbd8c968.png"
 OUT = "entry.png"
 SIZE = 1024
 BRAND = "SPOONBENDER"
