@@ -1,5 +1,10 @@
 // Copies the committed catalogue photo to /output/entry.png.
+// Writes the catalogue photo to /output/entry.png.
 import { copyFileSync, existsSync, mkdirSync, statSync } from "node:fs";
+
+const MAX_ENTRY_BYTES = 1048576;
+if (!existsSync("entry.png")) throw new Error("entry.png is missing");
+if (statSync("entry.png").size > MAX_ENTRY_BYTES) throw new Error("entry.png exceeds 1,048,576 bytes");
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
